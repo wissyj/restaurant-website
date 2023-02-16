@@ -1,0 +1,79 @@
+@media (max-width:410px){
+    /* contact-page */
+    #welcome_contact_page{
+        display: block;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    #welcome_contact_page a{
+    text-decoration: none;
+    color: black;
+    }
+    ul{
+    margin: 20px 70px;  
+    padding: 10px 30px;  
+    text-align: center; 
+    font-size: 14px;}
+    .logo{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+    }
+    .background{
+        padding: 0 20px;
+    }
+    label{
+        display: block;
+    }
+
+
+
+    /* home-page */
+    #welcome_page{
+        display: block;
+        position: fixed;
+        right: 0;
+        left: 0;
+        padding: 0 0 10px 0;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    nav ul li  {
+        list-style: none;
+    }
+    .logo-image{
+        margin-left: .625rem;
+    }
+    ul{
+        display: block;
+    }
+    .showcase{
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 7.5rem;
+        }
+        .showcase-text h3{
+            position: relative;
+            top: -7.5rem;
+            left: .625rem;
+            font-size: 2.5rem;
+            font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: normal;
+            }
+            .showcase-image img{
+                width: 31.25rem;
+                position: relative;
+                top: 35rem;
+                left: 3.125rem;
+            }
+            section p{
+                width: 31.25rem;
+                text-align: center;
+              position: relative;  
+              bottom: 8.25rem;
+              left: 3.75rem;
+            }
+}
