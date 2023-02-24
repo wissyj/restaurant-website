@@ -2,6 +2,7 @@
     --primary-color: #e32929;
     --secondary-color:#ff611d;
     --textiary-color:#ffb80e;
+    --menu-speed: 0.3s
 }
 *{
     margin: 0;
@@ -30,7 +31,7 @@ section{
     position: fixed;
     right: 0;
     left: 0;
-    padding: 10px 0;
+    padding:  0;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -54,20 +55,26 @@ span{
     margin-left: 10px;
     margin-right: 10px;
 }
-#home a{
+  .nav-items a{
     text-decoration: none;
-    color: black;
+    color: #000;
 }
-ul{
+#welcome_page a{
+    margin-top: 20px ;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-items {
     display: flex;
 }
 nav ul li  {
     list-style: none;
     margin: 0 10px;
 }
-nav ul a {
+ .nav-items ul a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
    }
 
 nav ul li a:hover:after {
@@ -82,18 +89,22 @@ nav ul li a::after {
     content: '';
      width: 0;
     height: 10%;
-     background-color: var(--textiary-color);
      display: block;
      transition: 0.2s;
 }
-.icon a svg{
+/* .menu-wrap{
+    display: none;
+} */
+.icons a svg{
 width: 1.1rem;
 transition: all .3s;
 }
-.icon a svg:hover{
+.icons a svg:hover{
 width: 1.1rem;
 color: var(--secondary-color);
 }
+
+
 /* showcase */
 .showcase{
 display: flex;
@@ -237,6 +248,10 @@ section p{
     margin-left: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
+#menu .menu-box .menu-card:nth-child(6) h2, #menu .menu-box .menu-card:nth-child(7) h2{
+font-size: 1.2rem;
+}
+
 .menu-card .menu-image{
   width: 300px;
   height: 200px;
@@ -436,7 +451,7 @@ opacity: 1;
     width: 40rem;
     height: 100%;
     padding: 1rem;
-    margin: 1.8rem 0;
+    margin:  0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     border: .1rem solid rgba(0, 0, 0, 0.2) ;
     border-radius: 15px;
@@ -463,11 +478,12 @@ opacity: 1;
 .customer-info h2{
     font-size: 2rem;
     padding-bottom: 1.5rem;
+    color: var(--secondary-color);
 }
 .customer-box p{
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #928e8e;
+    color: #fff;
 }
 .customer-heading{
     text-align: center;
@@ -477,7 +493,7 @@ opacity: 1;
   .btn {
     display: inline-block;
     background: #fff;
-    color: #333;
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 1rem 2rem;
     margin-top: 4rem;
@@ -487,12 +503,12 @@ opacity: 1;
 
   }
   .btn:hover {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: var(--textiary-color);
   }
   
   .btn-dark {
-    background: black;
+    background: var(--secondary-color);
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -505,48 +521,8 @@ opacity: 1;
   }
   .btn-dark:hover {
     background: #fff;
-    color: black;
+    color: var(--secondary-color);
   }
-
-/* .customer-box .customer-info{
-    position: relative;
-   
-} */
-/* .customer-reviews-container{
-display: flex;
-margin: 5rem 0;
-}
-.customer-box{
-    width: 220px; 
-    height: 250px;
-    margin: 10px auto;
-   text-align: center;
-   transition: all 0.3s ;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    overflow: visible;
-    background-color: var(--textiary-color);
- }
-.customer-heading{
-    text-align: center;
-    font-size: 30px;
-}
-.customer-box img{
-    width: 100%;
-    height: 200px;
-    padding: 0 10px;
-    border-radius: 100%;
-    border: 0px #fff;
-    position: relative;
-    bottom: 5rem;
-}
-
-
-    .customer-box:hover .customer-reviews i{
-       background-color: var(--textiary-color);
-    } */
-
-
 
 /* team */
 
@@ -573,8 +549,8 @@ text-align: center;
     margin-bottom: 20px;
 }
 .team-box{
-    width: 250px;
-    height: 250px;
+    width: 12.5rem;
+    height: 12.5rem;
     text-align: center;
     margin-left: 20px;
     border-radius: 50%;
@@ -582,8 +558,8 @@ text-align: center;
     transition: 0.3s;
 }
 .team-box .team-image img{
-    width: 200px;
-    height: 200px;
+    width: 9.375rem;
+    height: 9.375rem;
     position: relative;
      top: 24px;
     border-radius: 50%;
@@ -605,6 +581,13 @@ text-align: center;
 .team-box:hover .profile{
    transform: translateY(70px);
 }
+.team-box p{
+    display: none;
+}
+.team-box:hover p{
+display: contents;
+}
+
 .team-box  .profile{
   position: relative;
   top: -120px;
@@ -868,5 +851,9 @@ color: black;
     height: 4rem;
   }
 
-
-   
+  @media (min-width:768px){
+    .menu-wrap{
+        display: none;
+    }
+  }
+    
