@@ -1,0 +1,128 @@
+@media (min-width:768px) and (max-width:1000px){
+  .showcase{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 7.5rem;
+    }
+    .showcase-text h3{
+    position: relative;
+    top: -7.5rem;
+    left: 3.75rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    }
+    .showcase-image img{
+        width: 31.25rem;
+        position: relative;
+        top: -10rem;
+        left: 3.125rem;
+    }
+    /* about page */
+    #about{
+        width: 100%;
+        height: 100vh;
+        padding: 3.125rem 0;
+        background-image: url(./images/bg2.jpg);
+    }
+    
+    .about-page{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;   
+    }
+    .about-text h3 span{
+      font-size: 35px;
+      margin-right: .3125rem ;
+    }
+    .about-text h3 {
+      font-size:1.5625rem ;
+    }
+    .about-text h4{
+     font-size: 1.5625rem;
+     margin-top: 0.9375rem;
+    }
+    .about-text p{
+        width: 34.375rem;
+      text-align: justify;
+      margin-right: .9375rem;
+      line-height: 1.2;
+      margin-top: .625rem;
+      margin-bottom: .9375rem;
+    }
+    .about-btn{
+        text-decoration: none;
+        background-color: var(--textiary-color);
+        color: black;
+        padding: .9375rem;
+        margin-top: 3.125rem;
+        transition: 0.3s;
+    }
+    .about-btn:hover{
+        background-color: var(--secondary-color);
+        color: black;
+    
+    }
+}
+@media (min-width:768px) and (max-width:900px){
+  .about-image img{
+    width: 21.875rem;
+    position: relative;
+    top: 3.125rem;
+    left:4.9375rem;
+    border-radius: 100%;  
+ }
+ .about-text {
+position: relative;
+left: 5.9375rem;
+line-height: 1.2;
+}
+.customer-reviews-container{
+  height:27rem ;
+  width: 100%;
+  margin: 5rem 0 2rem 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+.reviews .customer-reviews-container .customer-box{
+  background-color: var(--textiary-color);
+  width: 40rem;
+  height: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 15px;
+  text-align: center;
+  transform: translateX(0);
+  transition: .3s all;
+}
+.our-team{
+  width: 100%;
+  height: 100vh;
+  margin: 0 0 5rem 0;
+}
+.our-team h1{
+margin:0 0 3rem  0;
+text-align: center;
+}
+
+.inputs #message-box{
+  width: 30rem;
+  height: 10rem;
+  transform: translateX(0);
+  resize: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+  padding: 5px;
+}
+.inputs #message-box:focus{
+   outline: none;
+ border: 1px solid var(--primary-color);
+}
+.inputs .message-box{
+  transform: translateX(0);
+}
+}

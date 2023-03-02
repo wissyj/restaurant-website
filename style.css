@@ -248,6 +248,16 @@ section p{
     margin-left: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
+@media (min-width:1000px){
+    #menu .menu-box .menu-card{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+    }
+    #about{
+        width: 100vw;
+        height: 100vh;
+        padding: 3.125rem 0;}
+        
+}
 #menu .menu-box .menu-card:nth-child(6) h2, #menu .menu-box .menu-card:nth-child(7) h2{
 font-size: 1.2rem;
 }
@@ -258,8 +268,6 @@ font-size: 1.2rem;
   margin: 0 auto;
   overflow: hidden;
 }
-
-
 .menu-card .menu-image img{
 width: 100%;
 height: 100%;
@@ -330,7 +338,16 @@ transform: scale(1.1);
 }
 
 /* services styling */
-
+#services{
+    width: 100vw;
+    padding: 60px 0 0 0;
+    }
+    #services h1{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 .services-container{
     width: 100%;
     height: 100%;
@@ -339,16 +356,6 @@ transform: scale(1.1);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-}
-#services{
-width: 100%;
-padding: 60px 0 0 0;
-}
-#services h1{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
 }
 .services-container .services-box{
     width: 600px;
@@ -438,6 +445,10 @@ opacity: 1;
     height: 100vh;
     padding: 60px 0 0 0;
     /* background-image: url(./images/bg-1.jpg); */
+}
+.reviews h1{
+text-align: center;
+padding-bottom: 2rem;
 }
 .customer-reviews-container{
     height:27rem ;
@@ -708,11 +719,20 @@ button:hover{
     border-radius: 5px;
     border-width: 0;
 }
+.footer-container{
+    margin: 0 auto;
+}
 
 .footer-box{
     display: grid;
     grid-template-columns: repeat(4, .5fr);
     padding: 10px 30px;
+    margin: 0 auto;
+}
+.footer a:hover i{
+text-decoration: none;
+color: var(--secondary-color);
+  
 }
 .footer a{
     text-decoration: none;
@@ -729,16 +749,11 @@ button:hover{
 }
 
 /* contact page */
-/* #contact_us{
-     background: linear-gradient(red, yellow); /* Standard syntax */
-    
-/* } */ 
 
 #welcome_contact_page{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-  
+    align-items: center; 
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -747,9 +762,6 @@ button:hover{
 text-decoration: none;
 color: black;
 }
-
- 
-  
   textarea{
     width: 15rem;
     border-radius: 8px;
@@ -796,13 +808,6 @@ color: black;
     border-radius: 5px;
     cursor: pointer;
   }
-  /* .inp-2:current{
-    background-color: var(--primary-color);
-    color: var(--textiary-color);
-    margin: 0 0 20px 0;
-    border-radius: 5px;
-    cursor: pointer;
-  } */
   .button {
     background:var(--textiary-color);
     color: var(--primary-color);
