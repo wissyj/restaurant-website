@@ -92,16 +92,16 @@ nav ul li a::after {
      display: block;
      transition: 0.2s;
 }
-/* .menu-wrap{
-    display: none;
-} */
 .icons a svg{
 width: 1.1rem;
 transition: all .3s;
+fill: var(--primary-color);
+
 }
 .icons a svg:hover{
 width: 1.1rem;
-color: var(--secondary-color);
+/* color: var(--secondary-color); */
+fill: var(--secondary-color);
 }
 
 
@@ -284,7 +284,7 @@ transform: scale(1.1);
 
 }
 .menu-card .menu-info h2,.menu-card .menu-info svg{
-    color: var(--textiary-color);
+    fill: var(--textiary-color);
 }
 .menu-card .menu-info h3{
     margin: 20px 0 30px 0;
@@ -319,18 +319,18 @@ transform: scale(1.1);
     color: var(--secondary-color);
     opacity: 1;
 }
-.menu-box .menu-card .small-card i {
+.menu-box .menu-card .small-card svg {
     font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 50px;
-    color:var(--textiary-color) ;
+    fill:var(--textiary-color) ;
     text-shadow: 0 0 6px #000;
     transition: 0.2s;
 }
-.menu-box .menu-card .small-card i:hover {
-    color: var(--secondary-color);
+.menu-box .menu-card .small-card svg:hover {
+    fill: var(--secondary-color);
 }
 .menu-icon{
     width: 20px;
@@ -341,7 +341,7 @@ transform: scale(1.1);
 
 /* services styling */
 #services{
-    width: 100vw;
+    width: 95vw;
     padding: 60px 0 0 0;
     }
     #services h1{
@@ -368,24 +368,6 @@ transform: scale(1.1);
     background: var(--textiary-color);
     transition: 0.5s;
 }
-/* .services-container .services-box::after{
-content: '';
-position: absolute;
-display: block;
-background: inherit;
-opacity: 0.9;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-transform: translateX(-75%) translateY(-75%) rotate(-280deg);
-
-}
-.services-container .services-box:hover::after{
-transform: translateX(-75%) translateY(-75%) rotate(-280deg);
-
-} */
-
 .services-container .services-box img{
 width: 100%;
 height: 100%;
