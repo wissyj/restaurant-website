@@ -132,7 +132,6 @@ transition: 0.3s;
 .menu-card .menu-info h3{
   margin: 20px 0 30px 0;
 }
-
 .menu-info .menu-btn{
   text-decoration: none;
   background-color: var(--textiary-color);
