@@ -1,10 +1,80 @@
     @media (max-width:768px){
-        html{
-          width: 100vw;
-        }
-        section{
+        .showcase{
+            background: url('./images/showcase\ bg\ for\ mobile.jpg') no-repeat center center/cover;
+                color: #fff;
+                height: 95vh;
+                line-height: 4.5rem;
+                display: block; 
+                position: relative;
+                top: 3.5rem;
+                }
+            .showcase-text h3{
+            position: relative;
+            top: 4.5rem;
+            left:0;
+            padding-left: 5%;
+            font-size: 3rem;
+            font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: normal;
+            transform: translateY(-1200px);
+            animation: heading 0.3s forwards ease-in;
+              }
+              @keyframes heading {
+                to {
+                  transform: translateY(0);
+                }
+              }
+            .showcase-text-heading{
+                width: 100vw;
+            } 
+             .section p {
+                /* use larger numbers to displace the text from the screen in case there are bigger devices viewing the web page */
+                transform: translateX(-5000px);
+                animation: section-p 1s forwards ease-in;
+              }
+              @keyframes section-p {
+                to {
+                  transform: translateX(0);
+                }
+              }
+            .showcase-image{
+                display: none;
+            }
+            section p{
+            display: none;
+            }
+            .showcase-btn{
+                position: relative;
+                left:0;
+                bottom: 0;
+                width: 12.125rem;
+                padding: 1.625rem 1.625rem;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+                text-align: center;
+                transform: translate(65%, -10rem) ;
+            }
+            @media (min-width:620px) and (max-width:768px){
+                .showcase-btn{
+                transform: translate(120%, -8rem) ;
+                }
+            }
+            .showcase-btn a{
+                color: black;
+                text-decoration: none;
+                margin-right: 0.3125rem;
+            }
+            .showcase-btn:hover{
+                background-color: var(--secondary-color);
+            }
+            .showcase-btn svg{
+                width: .8rem;
+                height: .8rem;
+                transition: 0.3s;
+            }
+             section{
             width: 100%;
-            height: fit-content;
+            height: 100vh;
         }
         /* home-page */
         #welcome_page{
@@ -13,22 +83,18 @@
             align-items: center;
             font-size: 1.25rem;
             position: fixed;
+            top: 0;
             right: 0;
             left: 0;
             text-align: center;
             padding: 0 0 .75rem 0;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
         }
         #welcome_page a{
             margin-top: 20px ;
             text-decoration: none;
             color: inherit;
-        }
-        #welcome_page a:hover{
-            color: var(--textiary-color);
-
         }
        .nav-items{
         display: none;
@@ -39,23 +105,27 @@
         .logo-image{
             margin-left: .625rem;
         }
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .icon a svg{
-            width: 1.1rem;
+            width: 2.5rem;
+            padding: 0 .5rem;
+            fill: var(--textiary-color);
             transition: all .3s;
             }
             .icon a svg:hover{
-            width: 1.1rem;
-            color: var(--secondary-color);
-            }
-            
+            fill: var(--secondary-color);
+            }           
               /* hamburger overlay */
               .menu-wrap {
                 position: fixed;
                 top: 0;
                 left: 0;
                 z-index: 1;
-              }
-              
+              }            
               .menu-wrap .toggler {
                 position: absolute;
                 top: 0;
@@ -167,7 +237,7 @@
                 align-items: center;
                 justify-content: center;
                 transform: scale(0);
-                transition: all 0.4s ease;
+                transition: all 0.2s ease;
                 opacity: 0.9;
                 z-index: 10;
               }
@@ -177,7 +247,7 @@
                 max-width: 90vw;
                 max-height: 100vh;
                 opacity: 0;
-                transition: opacity 0.4s ease;
+                transition: opacity 0.3s ease;
               }
               .menu-wrap .menu  div  div  ul {
                display: block;
@@ -193,57 +263,15 @@
               .menu-wrap .menu > div > div > ul > li > a {
                 color: #fff;
                 text-decoration: none;
-                transition: color 0.4s ease;
+                transition: color 0.3s ease;
               }
               .menu-wrap .menu  ul  li  a:hover {
-                color: var(--textiary-color);
+                color: var(--textiary-color) !important;
               }
 
 
               /* showcase */
-        .showcase{
-            display: block;
-            position: relative;
-            top: 2rem;
-        }
-                .showcase .showcase-text-heading{
-                    position: relative;
-                    top: 2.5rem;
-                    left: 1.625rem; 
-                    z-index:10;
-                    font-size: 2rem;
-                    font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-style: normal;
-                }
 
-                .showcase-image img{
-                    width: 15.25rem;
-                    position: relative;
-                     top: -5rem;
-                     left: 48%;
-                    padding-left: 1.75rem;
-                    padding-top: .75rem;
-                }
-                section p{
-                    width: 25rem;
-                    text-align: left;
-                   position: relative;  
-                   padding: 1.75rem ;
-                   padding-bottom: 0;
-                   left: 0;
-                   /* top: 3.25rem; */
-                }   
-                .showcase-btn{
-                    background-color: var(--textiary-color);
-                    cursor: pointer;
-                    position: relative;
-                    left:1.75rem;
-                    /* bottom: 4.375rem; */
-                    width: 8.125rem;
-                    padding: .625rem;
-                    transition: 0.3s;
-                }
-                
                 /* about page */
     #about{
         width: 100%;
@@ -312,11 +340,7 @@
     align-items: center;
     margin-bottom: 1.25rem;
 }
-@media(max-width:500px){
-    .menu h1{
-        margin-top: 7.25rem;
-    }  
-}
+
 .menu h1 span::after{
     content: '';
     height: .125rem;
@@ -377,7 +401,7 @@ transform: scale(1.1);
 
 }
 .menu-card .menu-info h2,.menu-card .menu-info svg{
-    color: var(--textiary-color);
+    fill: var(--textiary-color);
 }
 .menu-card .menu-info h3{
     margin: 10px 0 15px 0;
@@ -396,7 +420,7 @@ transform: scale(1.1);
 }
 
 .menu-box .menu-card .small-card svg:hover {
-    color: var(--secondary-color);
+    fill: var(--secondary-color);
 }
 .menu-card .small-card{
     width: 25px;
@@ -419,14 +443,26 @@ transform: scale(1.1);
     width: 20px;
     height: 20px;
 }
-@media(min-width:500px){
+@media(min-width:500px) and (max-width:620px){
     .menu .menu-box{
         height: 100%;
          margin: 0 auto;
          display: grid;
-         grid-template-columns: repeat(3, 1fr);
+         grid-template-columns: repeat(2, 1fr);
          width: 100vw;
-        }   
+        } 
+        .showcase-btn{
+            position: relative;
+            left:0;
+            bottom: 0;
+            width: 12.125rem;
+            padding: 1.625rem 1.625rem;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            text-align: center;
+            transform: translate(100%, -10rem) ;
+        }  
 }
 
 /* services styling */
@@ -448,7 +484,7 @@ padding: 60px 0 0 0;
     margin-bottom: 20px;
 }
 .services-container .services-box{
-    width: 100vw;
+    width: 95vw;
     height: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
@@ -568,6 +604,7 @@ padding: 60px 0 0 0;
     .customer-box .customer-image{
         padding-bottom: 1.5rem;
     }
+    
     .customer-image img{
         height: 7rem;
         width: 7rem;
@@ -648,7 +685,7 @@ padding: 60px 0 0 0;
         margin-top: 3rem;
         margin-bottom: 3rem;
         transition: 0.3s;
-        height: 250px;
+        height: 15.625rem;
         border-radius: 20px;
         box-shadow: 0 0 8px var(--primary-color);
         z-index: 6;
@@ -805,12 +842,6 @@ padding: 60px 0 0 0;
         border-width: 0;
     }
 
-    /* .menu .menu-box > div:nth-child(8){
-        display: none;
-    } */
-
-
-
 /* footer page */
     
 .footer-box{
@@ -841,7 +872,7 @@ padding: 60px 0 0 0;
 
 }
 
-@media(max-width:370px){
+@media(max-width:375px){
     .menu .menu-box{
         height: 100%;
          margin: 0 ;
@@ -863,46 +894,23 @@ padding: 60px 0 0 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
         }
         #menu .menu-box .menu-card:nth-child(1) h2{
-        font-size: 1.45rem;            }
-        .showcase .showcase-text-heading{
-            width: 280px;
-            position: relative;
-            top: 2.5rem;
-            left: 1.425rem; 
-            z-index:10;
-            font-size: 1.6rem;
-            font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-style: normal;
-        }
-        .showcase-image img{
-            width: 10.25rem;
-            position: relative;
-             top: -2rem;
-             left: 48%;
-            padding-left: 1.75rem;
-            padding-top: .75rem;
-        }
-        
-        section p{
-            width: 100vw;
-           position: relative;
-           top: -2rem; 
-           bottom: 0;
-           padding-right: 0;
-        } 
-        .showcase-btn{
-            position: relative;
-            left:1.75rem;
-            top: 0;
-            bottom: 0;
-            width: 8.125rem;
-            padding: .625rem;
-            transition: 0.3s;
-        } 
-
-        
+        font-size: 1.45rem;            }        
 }
 @media(max-width:390px){
+    .showcase{
+            line-height: 3.5rem;
+            }
+        .showcase-text h3{
+        font-size: 2.4rem;
+          }
+          .showcase-btn{
+            transform: translate(45%, -10rem) ;
+        }
+          .about-page{
+            width: 100vw;
+            display: block;
+            padding:1.5rem .5rem; 
+        }
     #order_now h1{
         text-align: center;
         margin-bottom: 20px;
@@ -937,7 +945,6 @@ padding: 60px 0 0 0;
      position: relative;
      top:10rem;
  }
-
     form p{
         width: 15rem;
     }
@@ -953,12 +960,14 @@ padding: 60px 0 0 0;
     .about-text p{
      width: 100vw;
     }
-    .section p{
-     width: 100vw;
-    }
-
 }
 @media(max-width:450px){
+    .showcase{
+        line-height: 3.5rem;
+        }
+    .showcase-text h3{
+    font-size: 2.4rem;
+      }
     #menu .menu-box .menu-card{
         width: 180px;
         height: 25.5rem; 
@@ -973,39 +982,6 @@ padding: 60px 0 0 0;
        height: 100%;
        padding: 60px 0;
        margin-top: 90%;
-    }
-    .showcase-image img{
-       display: none;
-    }
-    .showcase .showcase-text-heading{
-        position: relative;
-        top: 2.5rem;
-        left: 1.625rem; 
-        z-index:10;
-        font-size: 2rem;
-        font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-style: normal;
-    }
-
-    section p{
-        width: 100vw;
-        text-align: left;
-       position: relative;  
-       padding: 1.75rem ;
-       padding-bottom: 0;
-       top: 2.75rem;
-       left: 0;
-    }   
-    .showcase-btn{
-        background-color: var(--textiary-color);
-        cursor: pointer;
-        position: relative;
-        top: 2.75rem;
-        left:1.75rem;
-        width: 8.125rem;
-        padding: .625rem;
-        margin: 2.625rem 0;
-        transition: 0.3s;
     }
     .footer{
         margin: 5px 10px;
@@ -1034,5 +1010,8 @@ padding: 60px 0 0 0;
          grid-template-columns: repeat( 2, .5fr);
          width: 100vw; 
         }
+         .menu h1{
+                margin-top: 7.25rem;
+         }  
 }
 
