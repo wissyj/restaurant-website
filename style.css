@@ -319,7 +319,7 @@ transform: scale(1.1);
     color: var(--secondary-color);
     opacity: 1;
 }
-.menu-box .menu-card .small-card svg {
+.menu-box .menu-card .small-card i {
     font-size: 25px;
     display: flex;
     align-items: center;
@@ -329,12 +329,14 @@ transform: scale(1.1);
     text-shadow: 0 0 6px #000;
     transition: 0.2s;
 }
-.menu-box .menu-card .small-card svg:hover {
+.menu-box .menu-card .small-card i:hover {
     color: var(--secondary-color);
 }
 .menu-icon{
     width: 20px;
     height: 20px;
+    display: flex;
+
 }
 
 /* services styling */
