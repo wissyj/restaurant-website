@@ -440,8 +440,15 @@ transform: scale(1.1);
     opacity: 1;
 }
 .menu-icon{
+    display: flex;
+    text-align: center;
+
+}
+.menu-icon svg{
     width: 20px;
     height: 20px;
+    margin: 10px 0 20px 0;
+    transform: translateX(3rem);
 }
 @media(min-width:500px) and (max-width:620px){
     .menu .menu-box{
@@ -841,6 +848,7 @@ padding: 60px 0 0 0;
         border-radius: 5px;
         border-width: 0;
     }
+    
 
 /* footer page */
     

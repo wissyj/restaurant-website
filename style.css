@@ -4,6 +4,11 @@
     --textiary-color:#ffb80e;
     --menu-speed: 0.3s
 }
+/* N/B: to make your website look more color-based, use pseudo-selector for the selection feature(::selection) */
+::selection{
+    background: var(--primary-color);
+    color: #fff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +18,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -333,16 +339,19 @@ transform: scale(1.1);
     fill: var(--secondary-color);
 }
 .menu-icon{
-    width: 20px;
-    height: 20px;
     display: flex;
-    color: var(--textiary-color);
     text-align: center;
 
 }
+.menu-icon svg{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 50px 0;
+    transform: translateX(7rem);
+}
 /* services styling */
 #services{
-    width: 95vw;
+    width: 100vw;
     padding: 60px 0 0 0;
     }
     #services h1{
@@ -851,4 +860,20 @@ color: black;
         display: none;
     }
   }
+
+  /* scroll-bar feature */
+  ::-webkit-scrollbar{
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track{
+    border-radius: 1rem;
+
+  }
+  ::-webkit-scrollbar-thumb{
+    width: 13px;
+    height: 2rem;
+    border-radius: 10px;
+    background: var(--primary-color);
+  }
+
     
