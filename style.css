@@ -336,6 +336,8 @@ transform: scale(1.1);
     width: 20px;
     height: 20px;
     display: flex;
+    color: var(--textiary-color);
+    text-align: center;
 
 }
 /* services styling */
@@ -481,6 +483,12 @@ padding-bottom: 2rem;
 .customer-heading{
     text-align: center;
     font-size: 30px;
+}
+.customer-socials {
+display: flex;
+}
+.customer-socials svg{
+fill: var(--primary-color);
 }
 
   .btn {
