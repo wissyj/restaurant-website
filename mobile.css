@@ -1,6 +1,6 @@
-    @media (max-width:768px){
+    @media (max-width:769px){
         .showcase{
-            background: url('./images/showcase\ bg\ for\ mobile.jpg') no-repeat center center/cover;
+                background: url('./images/showcase\ bg\ for\ mobile.jpg') no-repeat center center/cover;
                 color: #fff;
                 height: 95vh;
                 line-height: 4.5rem;
@@ -351,7 +351,7 @@
     bottom: .3125rem;
 }
 .menu .menu-box{
-    width: 100vw;
+    width: 90vw;
    height: 100%;
     margin: 0 auto;
     display: grid;
@@ -738,18 +738,16 @@ padding: 60px 0 0 0;
     .team-box p{
         display: contents;
     }
-    .profile-socials i{
-        transform: translateY(180px);
-        transition: 0.3s;
-        color: var(--primary-color);
-    }
+    .profile-socials svg{
+        transform: translateY(-30px);
+      }
+      
+      .team-box:hover .profile-socials svg{
+        transform: translateY(0);
+      }
     .team-box:hover .team-reviews {
         transform: translateY(70px);
      }
-     .team-box:hover .profile-socials i{
-        transform: translateY(180px);
-     }
-     
      /*order now*/
      #order_now{
         width: 100%;
@@ -1028,5 +1026,118 @@ padding: 60px 0 0 0;
          .menu h1{
                 margin-top: 7.25rem;
          }  
+}
+@media (min-width:200px) and (max-width:385px){ 
+    .menu .menu-box{
+        height: 100%;
+         margin: 0 auto;
+        display: block;
+     }
+     #menu .menu-box .menu-card{
+         width: 325px;
+         height: 500px; 
+         padding-top: 10px;
+         margin-bottom: 20px;
+         margin-left: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+     }
+     @media (min-width:1000px){
+         #menu .menu-box .menu-card{
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+         }
+         #about{
+             width: 100vw;
+             height: 100vh;
+             padding: 3.125rem 0;}
+             
+     }
+     #menu .menu-box .menu-card:nth-child(6) h2, #menu .menu-box .menu-card:nth-child(7) h2{
+     font-size: 1.2rem;
+     }
+     
+     .menu-card .menu-image{
+       width: 300px;
+       height: 200px;
+       margin: 0 auto;
+       overflow: hidden;
+     }
+     .menu-card .menu-image img{
+     width: 100%;
+     height: 100%;
+     padding: 5px;
+     object-fit: cover;
+     object-position: center;
+     transition: 0.3s;
+     }
+     .menu-card .menu-info h2,.menu-card .menu-info svg{
+         fill: var(--textiary-color);
+     }
+     .menu-card .menu-info h3{
+         margin: 20px 0 30px 0;
+     }
+     
+     .menu-info .menu-btn{
+         text-decoration: none;
+         background-color: var(--textiary-color);
+         color: black;
+         padding: 15px;
+         margin-top: 15px;
+         transition: 0.3s;
+     }
+     .menu-btn:hover{
+         background-color: var(--secondary-color);
+         color: black;
+     }
+     .menu-card .small-card{
+         width: 25px;
+         height: 25px;
+         float: right;
+         position: relative;
+         top: -200px;
+         right: -8px;
+         opacity: 0;
+         border-radius: 7px;
+         transition: 0.3s;
+     }
+     .menu-box .menu-card:hover .small-card{
+         position: relative;
+         right: 20px;
+         color: var(--secondary-color);
+         opacity: 1;
+     }
+    /* it exceeds vw at 385px under the 500px tweak */
+
+    #menu .menu-box .menu-card:nth-child(8){
+    display: none;
+    }
+    #menu .menu-box .menu-card:nth-child(6) {
+        height:29.5rem !important; 
+    }
+    #menu .menu-box .menu-card:nth-child(7) {
+        height:32.5rem !important; 
+    
+    }
+    .menu-icon svg{
+        margin: 5px 0 50px 0;
+        transform: translateX(7rem);
+    }
+ #about{
+    width: 100vw;
+    overflow-wrap: break-word;
+ }
+
+    #services{
+        width: 100vw;
+        padding: 60px 0 0 0;
+        }
+}
+
+
+
+@media (min-width:300px) and (max-width:769px){ 
+    #order_now{
+       margin-top: 145%;
+    }
+    
 }
 
