@@ -235,31 +235,19 @@ transition: 0.3s;
       
 
 }
+.customer-reviews-container{
+  margin: 5rem 0 2rem 0;
+  overflow: hidden;
+}
+.reviews .customer-reviews-container .customer-box{
+  transform: translateX(25%);
+}
 @media (min-width:768px) and (max-width:900px){
  .about-text {
 position: relative;
 left: 0;
 padding-left: 2rem;
 line-height: 1.2;
-}
-.customer-reviews-container{
-  height:27rem ;
-  width: 100%;
-  margin: 5rem 0 2rem 0;
-  overflow: hidden;
-  transition: all .3s;
-}
-.reviews .customer-reviews-container .customer-box{
-  background-color: var(--textiary-color);
-  width: 40rem;
-  height: 100%;
-  padding: 1rem;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  border-radius: 15px;
-  text-align: center;
-  transform: translateX(0);
-  transition: .3s all;
 }
 .our-team{
   width: 100%;
@@ -316,14 +304,14 @@ text-align: center;
     opacity: 0.5;
     width: 100%;
     }
+    /* .reviews .customer-reviews-container .customer-box{
+      transform: translateX(30%);
+    } */
 
 }
 @media (min-width:1000px) and (max-width:1030px){
   .services-text p{
     margin: -20rem 0 0 10px;
-    text-align: center;
-    z-index: 5;
-    opacity: 0;
     font-size: 20px;
 
     }
@@ -338,4 +326,19 @@ text-align: center;
         .services-text .services-btn{
           margin-left: 10rem;   
     }
+    .reviews .customer-reviews-container .customer-box{
+      transform: translateX(30%);
+    }
 }
+@media (min-width:1400px) and (max-width:1700px){
+  .reviews .customer-reviews-container .customer-box{
+    transform: translateX(70%);
+  }
+}
+@media (min-width:1700px) and (max-width:2000px){
+  .reviews .customer-reviews-container .customer-box{
+    transform: translateX(90%);
+  }
+}
+
+
