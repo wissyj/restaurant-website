@@ -494,8 +494,18 @@ padding-bottom: 2rem;
     font-size: 30px;
 }
 .customer-socials {
-display: flex;
-}
+    color:var(--secondary-color) ;
+    padding-top: .5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+.customer-socials i{
+    color:var(--secondary-color) ;
+    padding: 0 .1rem;
+  }
+  
 .customer-socials svg{
 fill: var(--primary-color);
 }
@@ -533,6 +543,7 @@ fill: var(--primary-color);
     background: #fff;
     color: var(--secondary-color);
   }
+
 
 /* team */
 
