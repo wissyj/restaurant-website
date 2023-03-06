@@ -243,6 +243,13 @@ transition: 0.3s;
   transform: translateX(25%);
 }
 
+#page-4 {
+  transform: translateX(0);
+}
+#page-4 .btn-dark{
+  transform: translateY(-3.5rem);
+}
+
 @media (min-width:768px) and (max-width:900px){
  .about-text {
 position: relative;
